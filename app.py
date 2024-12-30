@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
@@ -102,16 +101,4 @@ if st.sidebar.button("Predict"):
     </h2>
     """, unsafe_allow_html=True)
 
-    # # Visualization: Feature Importance
-    # st.subheader("Feature Importance")
-    # importances = rf_model.feature_importances_
-    # indices = np.argsort(importances)[::-1]
 
-    # plt.figure(figsize=(10, 6))
-    # plt.title("Feature Importance", fontsize=16)
-    # plt.bar(range(len(features)), importances[indices], align="center", color="skyblue")
-    # plt.xticks(range(len(features)), [features[i] for i in indices], rotation=45, fontsize=12)
-    # plt.ylabel("Importance", fontsize=12)
-    # plt.tight_layout()
-
-    # st.pyplot(plt)
