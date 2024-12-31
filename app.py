@@ -3,23 +3,6 @@ import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-import pkg_resources
-import subprocess
-import sys
-
-def install_missing_requirements(requirements_file="requirements.txt"):
-    with open(requirements_file, "r") as file:
-        dependencies = file.readlines()
-
-    for dependency in dependencies:
-        try:
-            pkg_resources.require([dependency.strip()])
-        except pkg_resources.DistributionNotFound:
-            print(f"{dependency.strip()} is missing. Installing...")
-            subprocess.check_call([sys.executable, "-m", "pip", "install", dependency.strip()])
-    print("All requirements satisfied.")
-
-install_missing_requirements()
 
 # Placeholder for training data (replace with actual data loading if needed)
 def load_and_train_model():
