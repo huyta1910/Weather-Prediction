@@ -37,8 +37,9 @@ Weather-Prediction is a project aimed at predicting weather conditions using mac
     The predictions will be saved in the `output` directory.
 
 3. View the app:
+     ```sh
     streamlit run app.py
-
+    ```
 ## Contributing
 We welcome contributions to the Weather-Prediction project. To contribute, please follow these steps:
 1. Fork the repository.
@@ -56,4 +57,3 @@ We welcome contributions to the Weather-Prediction project. To contribute, pleas
     ```
 5. Create a pull request.
 
-`````
